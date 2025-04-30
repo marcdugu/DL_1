@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 # Load data
 mat = scipy.io.loadmat('Xtrain.mat')
-data = mat['Xtrain'].flatten().reshape(-1, 1)
+data = mat['Xtrain'].flatten().reshape(-1, 1) #check this
 
 # Normalize
 scaler = MinMaxScaler()
