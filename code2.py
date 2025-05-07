@@ -14,7 +14,7 @@ data = mat['Xtrain'].flatten().reshape(-1, 1)
 scaler = MinMaxScaler()
 scaled = scaler.fit_transform(data)
 
-# Create supervised dataset
+# Create supervised datase
 def create_dataset(series, n_steps):
     X, y = [], []
     for i in range(len(series) - n_steps):
